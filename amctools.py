@@ -197,8 +197,8 @@ with tab2:
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"#"text/csv"
                 )
                 
-    if len(anomalies) > 0:   
-        st.error(f"Attention! {len(anomalies)} étudiants ont été mal identifiés. Vérifier leurs copies.")        
+            if len(anomalies) > 0:   
+                st.error(f"Attention! {len(anomalies)} étudiants ont été mal identifiés. Vérifier leurs copies.")        
             #st.download_button(
             #    label="🚨 Télécharger les anomalies",
             #    data=df_merged,
